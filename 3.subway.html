@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>FORM</h2>
+
+        <p>주문서를 작성해주세요</p><br><br>
+
+        <label>이름:</label>
+        <input type="text" name="order_name" placeholder="이름을 입력해주세요."><br>
+
+        <label>날짜:</label>
+        <input type="date" name="order_date" value="2023-10-31">
+        <hr>
+        <label><h3><b>샌드위치 선택</b></h3></label><br>
+        <input type="radio" id="에그마요" name="sandwich" value="에그마요">
+        <label for="에그마요">에그마요</label>
+        <input type="radio" id="blt" name="sandwich" value="BLT">
+        <label for="blt">BLT</label>
+        <input type="radio" id="turkey" name="sandwich" value="터키">
+        <label for="turkey">터키</label>
+        <hr>
+        <label><h3>사이즈선택</h3></label><br>
+        <input type="number" name="length" value="15">
+        <hr>
+        <label><h3>빵선택</h3></label><br>
+        <select name="delivery">
+            <option value="option1">옵션1</option>
+            <!-- 추가적인 옵션들은 이곳에 추가하시면 됩니다 -->
+        </select>
+        <hr>
+        <label><h3>야채/소스</h3></label><br>
+        <input type="checkbox" id="extra1" name="extras" value="토마토">
+        <label for="extra1">토마토</label>
+        <input type="checkbox" id="extra2" name="extras" value="오이">
+        <label for="extra2">오이</label>
+        <input type="checkbox" id="extra3" name="extras" value="후추">
+        <label for="extra3">후추</label>
+        <input type="checkbox" id="extra4" name="extras" value="칠리">
+        <label for="extra4">칠리</label>
+        <input type="checkbox" id="extra5" name="extras" value="바베큐">
+        <label for="extra5">바베큐</label>
+        <!-- 위와 같이 추가 필요한 항목에 대해서는 추가하여 사용하세요 -->
+        <hr>
+        <br><br>
+        
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

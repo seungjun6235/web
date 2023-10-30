@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form</h1>
+
+    <form action="">
+        <div> 
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요" name="name">
+        </div>
+        <div>
+            <label for="date">날짜</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <hr>
+
+        <h2>샌드위치 선택</h2>
+
+        <label for="menu1">에그마요</label>
+        <input type="radio" name="menu" id="menu1" value="egg">
+        <label for="menu2">BLT</label>
+        <input type="radio" name="menu" id="menu2" value="blt">
+        <label for="menu3">터키</label>
+        <input type="radio" name="menu" id="menu3" value="turkey">
+
+        <hr>
+
+        <h3>사이즈 선택</h3>
+        <input type="number" min="15" max="30" step="15" value="15" name="size">
+
+        <hr>
+
+        <h2>빵선택</h2>
+
+        <select name="bread" id="">
+            <option value="honey">허니오트</option>
+            <option value="hatti">하티</option>
+            <option value="flat" disabled>플랫</option>
+        </select>
+
+        <hr>
+
+        <h2>야채/소스</h2>
+
+        <input type="checkbox" id="tomato" name="tomato">
+        <label for="tomato">토마토</label>
+
+        <input type="checkbox" id="cucumber" name="cucumber">
+        <label for="cucumber">오이</label>
+        
+        <input type="checkbox" id="pepper" name="pepper">
+        <label for="pepper">후추</label>
+
+        <input type="checkbox" id="bbq" name="bbq">
+        <label for="bbq">바베큐</label>
+
+        <input type="submit">
+
+        <h3></h3>
+
+
+
+    </form>
+</body>
+</html>
